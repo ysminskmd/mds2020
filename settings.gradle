@@ -1,5 +1,6 @@
 rootProject.name='My Application'
 include ':app'
+include ':broadcastreceiver'
 include ':service'
 include ':startactivity'
 include ':startactivityforresult'
