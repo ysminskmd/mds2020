@@ -1,5 +1,19 @@
 # MDS2020
 
+## MDS2020 Modules
+1. app
+1. startactivity
+1. startactivityforresult
+1. resolveactivity
+1. service
+1. broadcastreceiver
+1. contentprovider
+1. baseui
+
+1. activitylifecycle
+
+
+## Documentation
 1. Supporting Multiple Screens - https://developer.android.com/guide/practices/screens_support.html
 2. Единицы измерения - http://developer.alexanderklimov.ru/android/theory/scales.php
 3. Units & measurements - https://material.io/guidelines/layout/units-measurements.html
