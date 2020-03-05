@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:divider="@drawable/separator"
+    android:dividerPadding="3dp"
+    android:showDividers="middle"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!--android:textColor="@color/background"-->
+    <!--style="@style/ButtonStyle"-->
+
+    <Button
+        android:id="@+id/frame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarButtonStyle"
+        android:text="Frame"
+        android:onClick="onFrameClicked"
+        android:layout_weight="1"
+        android:textColor="#00b0e4"/>
+
+    <Button
+        android:id="@+id/relative"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarButtonStyle"
+        android:text="Relative"
+        android:onClick="onRelativeClicked"
+        android:layout_weight="1"
+        android:textColor="#00b0e4"/>
+
+</LinearLayout>
