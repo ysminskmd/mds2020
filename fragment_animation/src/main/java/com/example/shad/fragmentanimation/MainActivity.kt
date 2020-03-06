@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
                 R.animator.card_flip_left_in,
                 R.animator.card_flip_left_out)*/
         fragmentTransaction.replace(R.id.fragment_container, fragment)
-        fragmentTransaction.addToBackStack(null)
 
         fragmentTransaction.commit()
     }

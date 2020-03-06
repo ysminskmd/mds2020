@@ -21,20 +21,22 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun onNavigationItemSelected(item: MenuItem): Boolean = when (item.itemId) {
-        R.id.navigation_home -> {
-            replaceFragment(FirstFragment())
-            true
+    private fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.navigation_home -> {
+                replaceFragment(FirstFragment())
+                return true
+            }
+            R.id.navigation_dashboard -> {
+                replaceFragment(SecondFragment())
+                return true
+            }
+            R.id.navigation_notifications -> {
+                replaceFragment(ThirdFragment())
+                return true
+            }
         }
-        R.id.navigation_dashboard -> {
-            replaceFragment(SecondFragment())
-            true
-        }
-        R.id.navigation_notifications -> {
-            replaceFragment(ThirdFragment())
-            true
-        }
-        else -> false
+        return false
     }
 
     private fun replaceFragment(fragment: Fragment) {
