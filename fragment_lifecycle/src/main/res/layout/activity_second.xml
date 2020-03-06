@@ -6,7 +6,7 @@
     tools:context="com.example.shad.fragment_lifecycle.MainActivity">
 
     <fragment android:id="@+id/fragment"
-        android:name="com.example.shad.fragment_lifecycle.MainFragment"
+        android:name="com.example.shad.fragment_lifecycle.SecondFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorAccent" />

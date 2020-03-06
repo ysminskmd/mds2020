@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 
 private const val TAG = "MDS_TAG"
 
-class MainActivity : AppCompatActivity() {
+class SecondActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_second)
         Log.i(TAG, "onCreate ${this.javaClass.simpleName} savedInstanceState = $savedInstanceState")
     }
 

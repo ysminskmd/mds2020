@@ -1,6 +1,7 @@
 package com.example.shad.fragment_lifecycle
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 
 import android.util.Log
@@ -9,19 +10,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-private const val TAG = "FLifecycle.Fragment"
+private const val TAG = "MDS_TAG"
 
-class CustomFragment : Fragment() {
+class SecondFragment : Fragment() {
 
-    override fun onAttach(context: Context?) {
-        Log.i(TAG, "onAttach")
+    override fun onAttach(context: Context) {
         super.onAttach(context)
+        Log.i(TAG, "onAttach ${this.javaClass.simpleName}")
 
         //Вызывается, когда фрагмент связывается с activity (ему передается объект Activity).
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.i(TAG, "onCreate")
+        Log.i(TAG, "onCreate ${this.javaClass.simpleName}")
         super.onCreate(savedInstanceState)
     }
 
@@ -30,52 +31,52 @@ class CustomFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         //Вызывается для создания иерархии view, связанной с фрагментом.
 
-        Log.i(TAG, "onCreateView")
-        return inflater.inflate(R.layout.fragment, container, false)
+        Log.i(TAG, "onCreateView ${this.javaClass.simpleName}")
+        return inflater.inflate(R.layout.fragment_second, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
-        Log.i(TAG, "onActivityCreated")
         super.onActivityCreated(savedInstanceState)
+        Log.i(TAG, "onActivityCreated ${this.javaClass.simpleName}")
 
         //Вызывается, когда метод onCreate(), принадлежащий activity, возвращает управление.
     }
 
     override fun onStart() {
-        Log.i(TAG, "onStart")
         super.onStart()
+        Log.i(TAG, "onStart ${this.javaClass.simpleName}")
     }
 
     override fun onResume() {
-        Log.i(TAG, "onResume")
         super.onResume()
+        Log.i(TAG, "onResume ${this.javaClass.simpleName}")
     }
 
     override fun onPause() {
-        Log.i(TAG, "onPause")
         super.onPause()
+        Log.i(TAG, "onPause ${this.javaClass.simpleName}")
     }
 
     override fun onStop() {
-        Log.i(TAG, "onStop")
         super.onStop()
+        Log.i(TAG, "onStop ${this.javaClass.simpleName}")
     }
 
     override fun onDestroyView() {
-        Log.i(TAG, "onDestroyView")
         super.onDestroyView()
+        Log.i(TAG, "onDestroyView ${this.javaClass.simpleName}")
 
         //Вызывается при удалении иерархии view, связанной с фрагментом.
     }
 
     override fun onDestroy() {
-        Log.i(TAG, "onDestroy")
         super.onDestroy()
+        Log.i(TAG, "onDestroy ${this.javaClass.simpleName}")
     }
 
     override fun onDetach() {
-        Log.i(TAG, "onDetach")
         super.onDetach()
+        Log.i(TAG, "onDetach ${this.javaClass.simpleName}")
 
         //Вызывается при разрыве связи фрагмента с activity.
     }
