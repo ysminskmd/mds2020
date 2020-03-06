@@ -7,6 +7,7 @@ include ':service'
 include ':broadcast_receiver'
 include ':content_provider'
 include ':base_ui'
+include ':resources'
 
 include ':activity_lifecycle'
 include ':fragment_lifecycle'
