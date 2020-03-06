@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment.*
 
 class CustomFragment : Fragment() {
 
@@ -28,6 +28,7 @@ class CustomFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment, container, false)
         view.setBackgroundColor(backgroundColor)
 
+        val numberText = view.findViewById<TextView>(R.id.number_text)
         numberText.text = number.toString()
 
         return view
