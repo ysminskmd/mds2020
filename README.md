@@ -2,15 +2,27 @@
 
 ## MDS2020 Modules
 1. app
-1. startactivity
-1. startactivityforresult
-1. resolveactivity
+1. start_activity
+1. start_activity_for_result
+1. resolve_activity
 1. service
-1. broadcastreceiver
-1. contentprovider
-1. baseui
+1. broadcast_receiver
+1. content_provider
+1. base_ui
 
-1. activitylifecycle
+1. activity_lifecycle
+1. activity_back_stack
+
+1. fragment_create_layout
+1. fragment_create_runtime
+1. fragment_lifecycle
+1. fragment_navigation
+1. fragment_animation
+1. fragment_back_stack
+1. fragment_back_stack_up
+1. fragment_tablet
+1. fragment_tabs
+
 
 
 ## Documentation
