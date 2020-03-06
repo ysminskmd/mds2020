@@ -20,7 +20,7 @@ class ListFragment : Fragment() {
         fun onListItemClick(position: Int)
     }
 
-    override fun onAttach(context: Context?) {
+    override fun onAttach(context: Context) {
         super.onAttach(context)
         try {
             listItemClickListener = activity as ListItemClickListener?

@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity(), ListFragment.ListItemClickListener {
                     .add(R.id.fragment_container, fragment)
                     .commit()
         } else {
-            data = savedInstanceState.getIntArray(KEY_DATA)
+            data = savedInstanceState.getIntArray(KEY_DATA)!!
         }
     }
 
