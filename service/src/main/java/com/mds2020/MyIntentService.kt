@@ -12,7 +12,7 @@ class MyIntentService : IntentService("MyIntentService") {
         val count = intent!!.getIntExtra(EXTRA_DATA, 0)
         for (i in 1..count) {
             Thread.sleep(1000)
-            Log.d("MDS", "i = $i")
+            Log.d("MDS_LOG", "i = $i")
         }
     }
 }

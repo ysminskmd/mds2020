@@ -1,18 +1,18 @@
 package com.mds2020
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class SecondActivity : AppCompatActivity() {
 
     private val MDS: String = "MDS_LOG"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_second)
         Log.d(MDS, "onCreate $localClassName savedInstanceState = $savedInstanceState")
     }
 
@@ -42,8 +42,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
+        //outState.putString("key", "value")
         super.onSaveInstanceState(outState)
         Log.d(MDS, "onSaveInstanceState $localClassName savedInstanceState = $outState")
+
+
     }
 
     override fun onStop() {
@@ -56,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         Log.d(MDS, "onDestroy $localClassName")
     }
 
-    fun nextActivity(view: View) {
-        startActivity(Intent(view.context, SecondActivity::class.java))
+    fun clickButton(view: View) {
+        Toast.makeText(this, this.localClassName, Toast.LENGTH_SHORT).show()
     }
 }

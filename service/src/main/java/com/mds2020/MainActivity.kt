@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener({
             for (i in 1..100) {
                 Thread.sleep(1000)
-                Log.d("MDS", "i = $i")
+                Log.d("MDS_LOG", "i = $i")
             }
         })
     }

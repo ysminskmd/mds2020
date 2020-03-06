@@ -47,4 +47,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    fun nextActivity(view: View) {}
+    fun nextActivity(view: View) {}
+    fun nextActivity(view: View) {}
 }
